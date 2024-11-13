@@ -16,3 +16,74 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 10px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.search-form input {
+  padding: 8px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-form button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #0056b3;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+
+.photo-card {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.photo-card img {
+  width: 100%;
+  display: block;
+}
+
+.photo-card .info {
+  padding: 8px;
+  font-size: 14px;
+}
+
+.loader {
+  display: none;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.loader.hidden {
+  display: block;
+}
