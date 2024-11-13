@@ -1,5 +1,5 @@
 // pixabay-api.js
-const API_KEY = '47057239-824e754b75c5fca36ae14ba66'; // Заміни на свій ключ API
+const API_KEY = '47057239-824e754b75c5fca36ae14ba66'; 
 const BASE_URL = 'https://pixabay.com/api/';
 
 export async function fetchImages(query, page = 1, perPage = 12) {
